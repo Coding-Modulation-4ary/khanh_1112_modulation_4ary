@@ -1764,3 +1764,129 @@ seungmin_69_1D_Viterbi_demodul_M_ary(16,:)=0.000000000000;
 (null)_1D_Viterbi_M_ary(18,:)=[0.000000000000 0.000002861023];
 (null)_1D_Viterbi_demodul(18,:)=[0.000000000000 0.000000000000];
 (null)_1D_Viterbi_demodul_M_ary(18,:)=[0.000000000000 0.000000000000];
+(null)_channel(8)=0.035811710358;
+(null)_channel_M_ary(8)=0.052536582947;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011390113831];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016676521301];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.015609899860];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.022787256732];
+(null)_channel(9)=0.029202175140;
+(null)_channel_M_ary(9)=0.042914390564;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.004891967773];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007167625427];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.006647810584];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.009722199080];
+(null)_channel(10)=0.024073028564;
+(null)_channel_M_ary(10)=0.035330581665;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001621246338];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002388191223];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002161819348];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.003160615503];
+(null)_channel(11)=0.020203781128;
+(null)_channel_M_ary(11)=0.029668998718;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000494480133];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000716018677];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000572347374];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000834360837];
+(null)_channel(12)=0.017053508759;
+(null)_channel_M_ary(12)=0.025070571899;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000128078461];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000189590454];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000116427286];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000168288456];
+(null)_channel(13)=0.014759254456;
+(null)_channel_M_ary(13)=0.021711540222;
+%data(x,y)
+(null)_1D_Viterbi(13,:)=[0.000000000000 0.000045585632];
+(null)_1D_Viterbi_M_ary(13,:)=[0.000000000000 0.000067329407];
+(null)_1D_Viterbi_demodul(13,:)=[0.000000000000 0.000015204279];
+(null)_1D_Viterbi_demodul_M_ary(13,:)=[0.000000000000 0.000022285724];
+(null)_channel(14)=0.012931156158;
+(null)_channel_M_ary(14)=0.019053649902;
+%data(x,y)
+(null)_1D_Viterbi(14,:)=[0.000000000000 0.000030422211];
+(null)_1D_Viterbi_M_ary(14,:)=[0.000000000000 0.000045394897];
+(null)_1D_Viterbi_demodul(14,:)=[0.000000000000 0.000000416556];
+(null)_1D_Viterbi_demodul_M_ary(14,:)=[0.000000000000 0.000000624833];
+(null)_channel(15)=0.011470603943;
+(null)_channel_M_ary(15)=0.016909408569;
+%data(x,y)
+(null)_1D_Viterbi(15,:)=[0.000000000000 0.000015163422];
+(null)_1D_Viterbi_M_ary(15,:)=[0.000000000000 0.000022888184];
+(null)_1D_Viterbi_demodul(15,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(15,:)=[0.000000000000 0.000000000000];
+(null)_channel(8)=0.036712551117;
+(null)_channel_M_ary(8)=0.053375053406;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011406707764];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016687774658];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.014987253399];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.021238711344];
+(null)_channel(9)=0.030132675171;
+(null)_channel_M_ary(9)=0.043824768066;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.004905605316];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007187843323];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.006405166955];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.009092367035];
+(null)_channel(10)=0.025043678284;
+(null)_channel_M_ary(10)=0.036358833313;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001637744904];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002400970459];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002067677786];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.002933176153];
+(null)_channel(11)=0.021085071564;
+(null)_channel_M_ary(11)=0.030599021912;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000499439240];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000729942322];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000562037623];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000801661224];
+(null)_channel(12)=0.018090629578;
+(null)_channel_M_ary(12)=0.026175880432;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000126743317];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000185775757];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000106221674];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000149126899];
+(null)_channel(13)=0.015715408325;
+(null)_channel_M_ary(13)=0.022723197937;
+%data(x,y)
+(null)_1D_Viterbi(13,:)=[0.000000000000 0.000045108795];
+(null)_1D_Viterbi_M_ary(13,:)=[0.000000000000 0.000066375732];
+(null)_1D_Viterbi_demodul(13,:)=[0.000000000000 0.000019265696];
+(null)_1D_Viterbi_demodul_M_ary(13,:)=[0.000000000000 0.000027700946];
+(null)_channel(14)=0.013829612732;
+(null)_channel_M_ary(14)=0.020055198669;
+%data(x,y)
+(null)_1D_Viterbi(14,:)=[0.000000000000 0.000029373169];
+(null)_1D_Viterbi_M_ary(14,:)=[0.000000000000 0.000043296814];
+(null)_1D_Viterbi_demodul(14,:)=[0.000000000000 0.000000833111];
+(null)_1D_Viterbi_demodul_M_ary(14,:)=[0.000000000000 0.000001457945];
+(null)_channel(15)=0.012476062775;
+(null)_channel_M_ary(15)=0.018016815186;
+%data(x,y)
+(null)_1D_Viterbi(15,:)=[0.000000000000 0.000016021729];
+(null)_1D_Viterbi_M_ary(15,:)=[0.000000000000 0.000024604797];
+(null)_1D_Viterbi_demodul(15,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(15,:)=[0.000000000000 0.000000000000];
+(null)_channel(16)=0.011376285553;
+(null)_channel_M_ary(16)=0.016416931152;
+%data(x,y)
+(null)_1D_Viterbi(16,:)=[0.000000000000 0.000007724762];
+(null)_1D_Viterbi_M_ary(16,:)=[0.000000000000 0.000010490417];
+(null)_1D_Viterbi_demodul(16,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(16,:)=[0.000000000000 0.000000000000];
+(null)_channel(17)=0.010506248474;
+(null)_channel_M_ary(17)=0.015170288086;
+%data(x,y)
+(null)_1D_Viterbi(17,:)=[0.000000000000 0.000004482269];
+(null)_1D_Viterbi_M_ary(17,:)=[0.000000000000 0.000006294250];
+(null)_1D_Viterbi_demodul(17,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(17,:)=[0.000000000000 0.000000000000];
