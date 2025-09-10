@@ -7,7 +7,67 @@ Target is
 1.0 3.0 1.0 
 0.0 1.0 0.0 
 
+snr_db : 8.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 9.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 10.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 11.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
 snr_db : 12.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 13.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 14.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 15.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 16.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 17.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 18.0		Mis snr_db : 0.0
 viterbi error x : 0	BER : 0.000000000000
 viterbi M_ary error x : 0	BER : 0.000000000000
 modulation error x : 0	BER : 0.000000000000

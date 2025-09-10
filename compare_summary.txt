@@ -1,5 +1,5 @@
 page_size 1024
 encoded_area 1023 x 1024  (BH=3,BW=4)
 blocks 341 x 256
-mismatches 137
-mismatch_rate_in_encoded_area 0.000130781
+mismatches 0
+mismatch_rate_in_encoded_area 0.000000000
