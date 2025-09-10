@@ -1652,3 +1652,10 @@ seungmin_69_1D_Viterbi_demodul_M_ary(16,:)=0.000000000000;
 (null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000210952759];
 (null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000145273760];
 (null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000204528792];
+(null)_channel(12)=0.016305065155;
+(null)_channel_M_ary(12)=0.023520469666;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000146198273];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000210952759];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000145273760];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000204528792];

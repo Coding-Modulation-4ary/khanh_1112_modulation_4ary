@@ -1,23 +1,11 @@
-﻿// chiProposal46_4ary.c — Balanced 4-ary, 4x3 block, R = 11/12
+﻿// chiProposal46_4ary.c — Balanced 4-ary, 3x4 block, R = 11/12
 // 11 data symbols + 1 index (transform id in {0..3})
 // Seam-aware + DC penalty + run penalty theo HÀNG & CỘT.
 // Base: (i*BLOCK_COLS + j)*SYMS_PER_BLOCK + k
 //
-// Ở decode & so sánh full-page, CHỈ ép (int) rồi kẹp về {0..3}.
-//
 // Public API (drop-in):
-//   void Encode_chiProposal46_4ary(int** PAGE, int* input_1Ddata, int Page_Size);
-//   void Decode_chiProposal46_4ary(int* output_1Ddata, double** PAGE, int Page_Size);
-//
-// File output cho debug:
-//   - page_after_encode_20x20.txt
-//   - page_after_decode_20x20.txt
-//   - compare_summary.txt
-//   - mismatch_coords_full.txt
-//   - page_diff_full.txt (heatmap X/.)
-//   - mismatch_per_block.csv
-//   - mismatch_windows.csv (CSV chi tiết lân cận 3×3)
-//   - mismatch_by_row.csv
+//   void Encode_khanhProposal1112_4ary(int** PAGE, int* input_1Ddata, int Page_Size);
+//   void Decode_khanhProposal1112_4ary(int* output_1Ddata, double** PAGE, int Page_Size);
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -46,7 +34,6 @@ static sym_tf TFWD[4] = { tf_identity, tf_reflect, tf_rotp1, tf_rotm1 };
 static sym_tf TINV[4] = { tf_identity, tf_reflect, tf_rotm1, tf_rotp1 };
 
 /* ===================== Trọng số cost ===================== */
-/* Preset cân bằng & mượt, ưu tiên seam mạnh để hạ lỗi */
 static const int W_EXTREME = 4;  /* phạt {0,3} */
 static const int W_DIFF = 2;  /* tổng |Δ| nội khối */
 static const int W_RUN_ROW = 2;  /* chuỗi {0,3} theo HÀNG */
@@ -65,12 +52,7 @@ static int* g_dbg_enc_flat = NULL;
 static size_t g_dbg_enc_len = 0;
 static int    g_dbg_enc_pagesz = 0;
 
-/* =================== Helpers chung =================== */
-/* Ép về 0..3 từ double/int mà KHÔNG lượng tử */
-static inline int clamp4_from_double(double v) { int x = (int)v; if (x < 0) x = 0; if (x > 3) x = 3; return x; }
-static inline int clamp4_from_int(int    v) { if (v < 0) v = 0; if (v > 3) v = 3; return v; }
-
-/* Khởi tạo g_data_pos = tất cả 0..11 trừ INDEX_POS */
+/* =================== Init vị trí & cạnh =================== */
 static void init_positions_once(void) {
     static int inited = 0;
     if (inited) return;
@@ -84,8 +66,8 @@ static void init_positions_once(void) {
 
 static void init_edges_once(void) {
     if (E_CNT) return;
-    /* cạnh ngang */
     int e = 0;
+    /* cạnh ngang */
     for (int r = 0; r < BH; ++r)
         for (int c = 0; c < BW - 1; ++c) {
             int u = r * BW + c;
@@ -101,42 +83,8 @@ static void init_edges_once(void) {
             EDGES[e].v = u + BW;
             ++e;
         }
-    E_CNT = e; /* = 17 cho 4x3 */
+    E_CNT = e; /* = 17 cho khối 3x4 */
     init_positions_once();
-}
-
-/* ========== Dump helpers (20x20 có trục) ========== */
-static void dump_page_int_20x20_with_axes(const char* filename, int** PAGE, int Page_Size) {
-    FILE* f = fopen(filename, "w"); if (!f) return;
-    const int R = (Page_Size < 20) ? Page_Size : 20;
-    const int C = (Page_Size < 20) ? Page_Size : 20;
-    fprintf(f, "y\\x"); for (int c = 0; c < C; ++c) fprintf(f, " %2d", c); fputc('\n', f);
-    for (int r = 0; r < R; ++r) {
-        fprintf(f, "%2d ", r);
-        for (int c = 0; c < C; ++c) {
-            fprintf(f, "%2d", PAGE[r][c] & 3);
-            if (c + 1 < C) fputc(' ', f);
-        }
-        fputc('\n', f);
-    }
-    fclose(f);
-}
-
-static void dump_page_cast4_from_double_20x20_with_axes(const char* filename, double** PAGE, int Page_Size) {
-    FILE* f = fopen(filename, "w"); if (!f) return;
-    const int R = (Page_Size < 20) ? Page_Size : 20;
-    const int C = (Page_Size < 20) ? Page_Size : 20;
-    fprintf(f, "y\\x"); for (int c = 0; c < C; ++c) fprintf(f, " %2d", c); fputc('\n', f);
-    for (int r = 0; r < R; ++r) {
-        fprintf(f, "%2d ", r);
-        for (int c = 0; c < C; ++c) {
-            int v = clamp4_from_double(PAGE[r][c]);
-            fprintf(f, "%2d", v);
-            if (c + 1 < C) fputc(' ', f);
-        }
-        fputc('\n', f);
-    }
-    fclose(f);
 }
 
 /* ===================== Cost helpers ===================== */
@@ -201,8 +149,7 @@ static int cost_seam(const int cand[N_PER_BLOCK], int** PAGE, int r0, int c0, in
             int d = a - b; if (d < 0) d = -d;
             cost += W_SEAM * d;
             if (W_SEAM_XTRM && is_bad_pair(a, b)) cost += W_SEAM_XTRM;
-            /* mở rộng run qua seam hàng */
-            if (W_RUN_ROW && is_extreme(a) && is_extreme(b) && (a == b)) cost += W_RUN_ROW;
+            if (W_RUN_ROW && is_extreme(a) && is_extreme(b) && (a == b)) cost += W_RUN_ROW; /* run qua seam */
         }
     }
     /* biên trên */
@@ -213,8 +160,7 @@ static int cost_seam(const int cand[N_PER_BLOCK], int** PAGE, int r0, int c0, in
             int d = a - b; if (d < 0) d = -d;
             cost += W_SEAM * d;
             if (W_SEAM_XTRM && is_bad_pair(a, b)) cost += W_SEAM_XTRM;
-            /* mở rộng run qua seam cột */
-            if (W_RUN_COL && is_extreme(a) && is_extreme(b) && (a == b)) cost += W_RUN_COL;
+            if (W_RUN_COL && is_extreme(a) && is_extreme(b) && (a == b)) cost += W_RUN_COL; /* run qua seam */
         }
     }
     return cost;
@@ -282,7 +228,7 @@ static void fill_uncovered_edges_after_encode(int** PAGE, int Page_Size) {
     const int full_cols = (Page_Size / BW) * BW;  /* số cột đã encode */
     const int full_rows = (Page_Size / BH) * BH;  /* số hàng đã encode */
 
-    /* Lấp cột đuôi (vd: 1023) bằng cột mã hoá cuối (vd: 1022) */
+    /* Lấp cột đuôi bằng cột mã hoá cuối */
     if (full_cols < Page_Size && full_cols > 0) {
         int csrc = full_cols - 1;
         for (int r = 0; r < full_rows; ++r) {
@@ -302,8 +248,8 @@ static void fill_uncovered_edges_after_encode(int** PAGE, int Page_Size) {
 /* ====== Helpers: TF id theo block cho enc/dec (AN TOÀN) ====== */
 static int get_tf_from_enc_block(int bi, int bj) {
     if (!g_dbg_enc_flat || g_dbg_enc_pagesz <= 0) return 0;
-    int br = g_dbg_enc_pagesz / BH;   /* 1024/4 = 256 */
-    int bc = g_dbg_enc_pagesz / BW;   /* 1024/3 = 341 (floor) */
+    int br = g_dbg_enc_pagesz / BH;
+    int bc = g_dbg_enc_pagesz / BW;
     if (bi < 0) bi = 0; if (bi >= br) bi = br - 1;
     if (bj < 0) bj = 0; if (bj >= bc) bj = bc - 1;  /* CLAMP */
 
@@ -317,17 +263,15 @@ static int get_tf_from_dec_block_safe(double** PAGE_DBL, int bi, int bj, int Pag
     int br = Page_Size / BH;
     int bc = Page_Size / BW;
     if (bi < 0) bi = 0; if (bi >= br) bi = br - 1;
-    if (bj < 0) bj = 0; if (bj >= bc) bj = bc - 1;  /* CLAMP */
+    if (bj < 0) bj = 0; if (bj >= bc) bj = bc - 1;
 
     int r0 = bi * BH, c0 = bj * BW;
     int ir = g_index_pos / BW, ic = g_index_pos % BW;
-    return clamp4_from_double(PAGE_DBL[r0 + ir][c0 + ic]);
+    /* Detector đã lượng hoá về {0..3} → chỉ cần ép kiểu */
+    return (int)PAGE_DBL[r0 + ir][c0 + ic];
 }
 
-/* ========== FULL PAGE COMPARISON + NEIGHBOR WINDOWS to CSV (KHÔNG lượng tử) ========== */
-/* CSV cột chính: r,c,bi,bj,ri,ci,is_index,enc_tf,dec_tf,enc_sym,dec_sym,
-   orig_sym,dec_data_sym,raw_center, enc_w0..enc_w8, dec_w0..dec_w8 (win=1) */
-
+/* ========== FULL PAGE COMPARISON + NEIGHBOR WINDOWS (KHÔNG lượng tử) ========== */
 static long long compare_full_and_log_with_windows(
     const char* summary_file,
     const char* coords_file,
@@ -345,9 +289,8 @@ static long long compare_full_and_log_with_windows(
         return -1;
     }
 
-    /* Chỉ so trong vùng đã lát block để công bằng đánh giá */
-    const int ENC_H = (Page_Size / bh) * bh;   /* vd 1024 */
-    const int ENC_W = (Page_Size / bw) * bw;   /* vd 1023 với bw=3 */
+    const int ENC_H = (Page_Size / bh) * bh;
+    const int ENC_W = (Page_Size / bw) * bw;
     const int BR = (bh > 0) ? (ENC_H / bh) : 0;
     const int BC = (bw > 0) ? (ENC_W / bw) : 0;
 
@@ -370,7 +313,6 @@ static long long compare_full_and_log_with_windows(
 
     if (fheat) fprintf(fheat, "# page_diff_full '.':match  'X':mismatch  ' ':outside encoded_area\n");
 
-    /* Header cho CSV lân cận */
     if (fwin) {
         fprintf(fwin, "r,c,bi,bj,ri,ci,is_index,enc_tf,dec_tf,enc_sym,dec_sym,orig_sym,dec_data_sym,raw_center");
         const int winSz = (2 * win + 1) * (2 * win + 1);
@@ -387,7 +329,8 @@ static long long compare_full_and_log_with_windows(
             if (!in_encoded) { if (fheat) fputc(' ', fheat); continue; }
 
             int enc = g_dbg_enc_flat[p] & 3;
-            int dec = clamp4_from_double(PAGE_DBL[r][c]);
+            /* Detector đã kẹp: chỉ cast */
+            int dec = (int)PAGE_DBL[r][c];
             int diff = (enc != dec);
 
             if (diff) {
@@ -441,7 +384,7 @@ static long long compare_full_and_log_with_windows(
                                     size_t pp = (size_t)rr * g_dbg_enc_pagesz + cc;
                                     v = g_dbg_enc_flat[pp] & 3;
                                 }
-                                else v = -1; /* ngoài encoded area */
+                                else v = -1;
                             }
                             fprintf(fwin, ",%d", v);
                         }
@@ -451,7 +394,7 @@ static long long compare_full_and_log_with_windows(
                         for (int dc = -win; dc <= win; ++dc) {
                             int rr = r + dr, cc = c + dc; int v = -1;
                             if (rr >= 0 && rr < Page_Size && cc >= 0 && cc < Page_Size) {
-                                v = clamp4_from_double(PAGE_DBL[rr][cc]);
+                                v = (int)PAGE_DBL[rr][cc];
                             }
                             fprintf(fwin, ",%d", v);
                         }
@@ -465,7 +408,6 @@ static long long compare_full_and_log_with_windows(
         if (fheat) fputc('\n', fheat);
     }
 
-    /* ===== Summary ===== */
     if (fsum) {
         double rate = (ENC_H > 0 && ENC_W > 0) ? ((double)mism / (double)(ENC_H * ENC_W)) : 0.0;
         fprintf(fsum, "page_size %d\n", Page_Size);
@@ -495,7 +437,6 @@ static long long compare_full_and_log_with_windows(
     }
 
     if (frow) {
-        /* Header đã in ở trên, giờ ghi dữ liệu */
         if (row_cnt) {
             for (int r = 0; r < Page_Size; ++r) fprintf(frow, "%d,%lld\n", r, row_cnt[r]);
         }
@@ -508,9 +449,8 @@ static long long compare_full_and_log_with_windows(
     return mism;
 }
 
-
 /* ======================  PUBLIC API  ====================== */
-void Encode_chiProposal46_4ary(int** PAGE, int* input_1Ddata, int Page_Size)
+void Encode_khanhProposal1112_4ary(int** PAGE, int* input_1Ddata, int Page_Size)
 {
     init_edges_once(); /* cũng khởi init_positions_once() */
 
@@ -537,17 +477,11 @@ void Encode_chiProposal46_4ary(int** PAGE, int* input_1Ddata, int Page_Size)
         }
     }
 
-    /* Lấp mép chưa phủ bởi block để heatmap/compare êm (đặc biệt khi 1024 % 3 = 1) */
     fill_uncovered_edges_after_encode(PAGE, Page_Size);
-
-    /* Snapshot để so sánh toàn trang */
     dbg_store_encoded_page(PAGE, Page_Size);
-
-    /* (tuỳ chọn) patch 20x20 */
-    dump_page_int_20x20_with_axes("page_after_encode_20x20.txt", PAGE, Page_Size);
 }
 
-void Decode_chiProposal46_4ary(int* output_1Ddata, double** PAGE, int Page_Size)
+void Decode_khanhProposal1112_4ary(int* output_1Ddata, double** PAGE, int Page_Size)
 {
     init_edges_once();
 
@@ -563,31 +497,28 @@ void Decode_chiProposal46_4ary(int* output_1Ddata, double** PAGE, int Page_Size)
 
             for (int r = 0; r < BH; ++r) {
                 for (int c = 0; c < BW; ++c) {
-                    int v = clamp4_from_double(PAGE[r0 + r][c0 + c]);
+                    /* Detector đã lượng hoá về {0..3} → chỉ cast */
+                    int v = (int)PAGE[r0 + r][c0 + c];
                     grid[r * BW + c] = v;
                 }
             }
 
-            /* đảo biến đổi */
             decode_block_4x3_11of12(grid, out_block);
 
-            /* ghi 11 symbol/block về 1D — đúng base */
             for (int k = 0; k < SYMS_PER_BLOCK; ++k)
                 output_1Ddata[(i * BLOCK_COLS + j) * SYMS_PER_BLOCK + k] = out_block[k] & 3;
         }
     }
 
-    /* (tuỳ chọn) patch 20x20 & so sánh toàn trang (KHÔNG lượng tử) */
-    dump_page_cast4_from_double_20x20_with_axes("page_after_decode_20x20.txt", PAGE, Page_Size);
-
+    /* Giữ lại khối so sánh full-page (CSV, heatmap) nếu bạn vẫn dùng để QC */
     compare_full_and_log_with_windows(
         "compare_summary.txt",
         "mismatch_coords_full.txt",
         "page_diff_full.txt",
         "mismatch_per_block.csv",
-        "mismatch_windows.csv",      /* CSV chi tiết lân cận, mở Excel */
-        "mismatch_by_row.csv",       /* CSV mismatch theo row */
+        "mismatch_windows.csv",
+        "mismatch_by_row.csv",
         PAGE, Page_Size, BH, BW,
-        1 /* win=1 → cửa sổ 3x3; đổi 2 nếu muốn 5x5 */
+        1
     );
 }

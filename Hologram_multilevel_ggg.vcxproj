@@ -80,7 +80,7 @@
     <ClCompile Include="Hologram_multilevel.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chi_46proposal_modulation_code.h" />
+    <ClInclude Include="khanh_1112proposal_modulation_code.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chi_46proposal_modulation_code.h">
+    <ClInclude Include="khanh_1112proposal_modulation_code.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
