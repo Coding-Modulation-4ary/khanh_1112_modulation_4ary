@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hologram_multilevel_ggg", "Hologram_multilevel_ggg.vcxproj", "{A6E541D5-1F2A-43E8-9A47-EA850D4C1442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6E541D5-1F2A-43E8-9A47-EA850D4C1442}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6E541D5-1F2A-43E8-9A47-EA850D4C1442}.Debug|Win32.Build.0 = Debug|Win32
+		{A6E541D5-1F2A-43E8-9A47-EA850D4C1442}.Release|Win32.ActiveCfg = Release|Win32
+		{A6E541D5-1F2A-43E8-9A47-EA850D4C1442}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {933BAFAB-2930-4FB0-8E99-4AA1AF011E13}
+	EndGlobalSection
+EndGlobal

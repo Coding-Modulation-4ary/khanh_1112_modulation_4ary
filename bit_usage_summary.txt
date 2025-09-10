@@ -1,0 +1,14 @@
+page_size 1025
+encoded_area 1024 x 1023  (BH=4,BW=3)
+blocks 256 x 341
+cells_in_encoded_area 1047552
+bit_usage_4ary:
+  data_symbols_per_block 11
+  block_cells 12
+  blocks_total 87296  (BR=256, BC=341)
+  total_data_symbols 960256   (exclude index)
+  total_index_symbols 87296
+  total_cells_written 1047552  (include index)
+  total_data_bits 1920512      (4-ary ? 2 bits/symbol)
+  effective_bits_per_cell_in_encoded_area 1.833333
+  nominal_bits_per_cell_from_rate 1.833333  (= 2 * 11/12)
