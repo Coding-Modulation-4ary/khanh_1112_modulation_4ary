@@ -1890,3 +1890,388 @@ seungmin_69_1D_Viterbi_demodul_M_ary(16,:)=0.000000000000;
 (null)_1D_Viterbi_M_ary(17,:)=[0.000000000000 0.000006294250];
 (null)_1D_Viterbi_demodul(17,:)=[0.000000000000 0.000000000000];
 (null)_1D_Viterbi_demodul_M_ary(17,:)=[0.000000000000 0.000000000000];
+(null)_channel(8)=0.036712551117;
+(null)_channel_M_ary(8)=0.053375053406;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011406707764];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016687774658];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.014987253399];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.021238711344];
+(null)_channel(9)=0.030132675171;
+(null)_channel_M_ary(9)=0.043824768066;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.004905605316];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007187843323];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.006405166955];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.009092367035];
+(null)_channel(10)=0.025043678284;
+(null)_channel_M_ary(10)=0.036358833313;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001637744904];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002400970459];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002067677786];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.002933176153];
+(null)_channel(11)=0.021085071564;
+(null)_channel_M_ary(11)=0.030599021912;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000499439240];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000729942322];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000562037623];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000801661224];
+(null)_channel(12)=0.018090629578;
+(null)_channel_M_ary(12)=0.026175880432;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000126743317];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000185775757];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000106221674];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000149126899];
+(null)_channel(13)=0.015715408325;
+(null)_channel_M_ary(13)=0.022723197937;
+%data(x,y)
+(null)_1D_Viterbi(13,:)=[0.000000000000 0.000045108795];
+(null)_1D_Viterbi_M_ary(13,:)=[0.000000000000 0.000066375732];
+(null)_1D_Viterbi_demodul(13,:)=[0.000000000000 0.000019265696];
+(null)_1D_Viterbi_demodul_M_ary(13,:)=[0.000000000000 0.000027700946];
+(null)_channel(14)=0.013829612732;
+(null)_channel_M_ary(14)=0.020055198669;
+%data(x,y)
+(null)_1D_Viterbi(14,:)=[0.000000000000 0.000029373169];
+(null)_1D_Viterbi_M_ary(14,:)=[0.000000000000 0.000043296814];
+(null)_1D_Viterbi_demodul(14,:)=[0.000000000000 0.000000833111];
+(null)_1D_Viterbi_demodul_M_ary(14,:)=[0.000000000000 0.000001457945];
+(null)_channel(15)=0.012476062775;
+(null)_channel_M_ary(15)=0.018016815186;
+%data(x,y)
+(null)_1D_Viterbi(15,:)=[0.000000000000 0.000016021729];
+(null)_1D_Viterbi_M_ary(15,:)=[0.000000000000 0.000024604797];
+(null)_1D_Viterbi_demodul(15,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(15,:)=[0.000000000000 0.000000000000];
+(null)_channel(16)=0.011376285553;
+(null)_channel_M_ary(16)=0.016416931152;
+%data(x,y)
+(null)_1D_Viterbi(16,:)=[0.000000000000 0.000007724762];
+(null)_1D_Viterbi_M_ary(16,:)=[0.000000000000 0.000010490417];
+(null)_1D_Viterbi_demodul(16,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(16,:)=[0.000000000000 0.000000000000];
+(null)_channel(17)=0.010506248474;
+(null)_channel_M_ary(17)=0.015170288086;
+%data(x,y)
+(null)_1D_Viterbi(17,:)=[0.000000000000 0.000004482269];
+(null)_1D_Viterbi_M_ary(17,:)=[0.000000000000 0.000006294250];
+(null)_1D_Viterbi_demodul(17,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(17,:)=[0.000000000000 0.000000000000];
+(null)_channel(18)=0.009789752960;
+(null)_channel_M_ary(18)=0.014148521423;
+%data(x,y)
+(null)_1D_Viterbi(18,:)=[0.000000000000 0.000001621246];
+(null)_1D_Viterbi_M_ary(18,:)=[0.000000000000 0.000002670288];
+(null)_1D_Viterbi_demodul(18,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(18,:)=[0.000000000000 0.000000000000];
+(null)_channel(8)=0.035167026520;
+(null)_channel_M_ary(8)=0.051019287109;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011664772034];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016920661926];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.019751399627];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.026670387897];
+(null)_channel(9)=0.028875827789;
+(null)_channel_M_ary(9)=0.041855049133;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.004916191101];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007143592834];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.008250924753];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.011150568182];
+(null)_channel(10)=0.023905754089;
+(null)_channel_M_ary(10)=0.034557723999;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001649761200];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002390861511];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002621904992];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.003544471474];
+(null)_channel(11)=0.020096206665;
+(null)_channel_M_ary(11)=0.029082298279;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000484943390];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000709152222];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000721994968];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000968283458];
+(null)_channel(12)=0.017143726349;
+(null)_channel_M_ary(12)=0.024784278870;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000132656097];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000195884705];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000139129565];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000185992069];
+(null)_channel(8)=0.036712551117;
+(null)_channel_M_ary(8)=0.053375053406;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011406707764];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016687774658];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.014987253399];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.021238711344];
+(null)_channel(9)=0.030132675171;
+(null)_channel_M_ary(9)=0.043824768066;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.004905605316];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007187843323];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.006405166955];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.009092367035];
+(null)_channel(10)=0.025043678284;
+(null)_channel_M_ary(10)=0.036358833313;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001637744904];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002400970459];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002067677786];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.002933176153];
+(null)_channel(11)=0.021085071564;
+(null)_channel_M_ary(11)=0.030599021912;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000499439240];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000729942322];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000562037623];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000801661224];
+(null)_channel(12)=0.018090629578;
+(null)_channel_M_ary(12)=0.026175880432;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000126743317];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000185775757];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000106221674];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000149126899];
+(null)_channel(8)=0.036598777771;
+(null)_channel_M_ary(8)=0.053200679779;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011447969913];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016748085022];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.015023258381];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.021285379107];
+(null)_channel(8)=0.036598777771;
+(null)_channel_M_ary(8)=0.053200679779;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011447969913];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016748085022];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.015023258381];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.021285379107];
+(null)_channel(9)=0.030055140018;
+(null)_channel_M_ary(9)=0.043649599075;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.005015231609];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007333004951];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.006583336631];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.009311048304];
+(null)_channel(10)=0.024951251984;
+(null)_channel_M_ary(10)=0.036200127602;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001677299023];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002453601837];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002134497988];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.003018243052];
+(null)_channel(11)=0.020991362572;
+(null)_channel_M_ary(11)=0.030426523209;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000483662128];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000707303047];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000559504965];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000789659216];
+(null)_channel(12)=0.017932141304;
+(null)_channel_M_ary(12)=0.025968879700;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000132648945];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000194189072];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000103425545];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000146108954];
+(null)_channel(13)=0.015575533390;
+(null)_channel_M_ary(13)=0.022533449173;
+%data(x,y)
+(null)_1D_Viterbi(13,:)=[0.000000000000 0.000050531387];
+(null)_1D_Viterbi_M_ary(13,:)=[0.000000000000 0.000073994637];
+(null)_1D_Viterbi_demodul(13,:)=[0.000000000000 0.000013888484];
+(null)_1D_Viterbi_demodul_M_ary(13,:)=[0.000000000000 0.000019584361];
+(null)_channel(14)=0.013758369446;
+(null)_channel_M_ary(14)=0.019886943817;
+%data(x,y)
+(null)_1D_Viterbi(14,:)=[0.000000000000 0.000027647972];
+(null)_1D_Viterbi_M_ary(14,:)=[0.000000000000 0.000040699005];
+(null)_1D_Viterbi_demodul(14,:)=[0.000000000000 0.000001202284];
+(null)_1D_Viterbi_demodul_M_ary(14,:)=[0.000000000000 0.000001673512];
+(null)_channel(15)=0.012349989414;
+(null)_channel_M_ary(15)=0.017836588860;
+%data(x,y)
+(null)_1D_Viterbi(15,:)=[0.000000000000 0.000018158436];
+(null)_1D_Viterbi_M_ary(15,:)=[0.000000000000 0.000026678085];
+(null)_1D_Viterbi_demodul(15,:)=[0.000000000000 0.000000058838];
+(null)_1D_Viterbi_demodul_M_ary(15,:)=[0.000000000000 0.000000081228];
+(null)_channel(16)=0.011260567188;
+(null)_channel_M_ary(16)=0.016253101349;
+%data(x,y)
+(null)_1D_Viterbi(16,:)=[0.000000000000 0.000009925365];
+(null)_1D_Viterbi_M_ary(16,:)=[0.000000000000 0.000014597893];
+(null)_1D_Viterbi_demodul(16,:)=[0.000000000000 0.000000003124];
+(null)_1D_Viterbi_demodul_M_ary(16,:)=[0.000000000000 0.000000004166];
+(null)_channel(17)=0.010411427021;
+(null)_channel_M_ary(17)=0.015018527031;
+%data(x,y)
+(null)_1D_Viterbi(17,:)=[0.000000000000 0.000005420685];
+(null)_1D_Viterbi_M_ary(17,:)=[0.000000000000 0.000007983208];
+(null)_1D_Viterbi_demodul(17,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(17,:)=[0.000000000000 0.000000000000];
+(null)_channel(18)=0.009746423721;
+(null)_channel_M_ary(18)=0.014051673889;
+%data(x,y)
+(null)_1D_Viterbi(18,:)=[0.000000000000 0.000001860142];
+(null)_1D_Viterbi_M_ary(18,:)=[0.000000000000 0.000002709389];
+(null)_1D_Viterbi_demodul(18,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(18,:)=[0.000000000000 0.000000000000];
+(null)_channel(8)=0.036408138275;
+(null)_channel_M_ary(8)=0.053152084351;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011513710022];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016815376282];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.015112428352];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.021436366969];
+(null)_channel(9)=0.029647541046;
+(null)_channel_M_ary(9)=0.043310546875;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.004943561554];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007221221924];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.006446197681];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.009165680818];
+(null)_channel(10)=0.024522495270;
+(null)_channel_M_ary(10)=0.035749816895;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001642227173];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002392768860];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002062054286];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.002924636764];
+(null)_channel(11)=0.020487785339;
+(null)_channel_M_ary(11)=0.029882049561;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000497531891];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000723648071];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000551103039];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000791039056];
+(null)_channel(12)=0.017379093170;
+(null)_channel_M_ary(12)=0.025293540955;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000130462646];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000191307068];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000110699647];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000155375233];
+(null)_channel(13)=0.014967060089;
+(null)_channel_M_ary(13)=0.021798324585;
+%data(x,y)
+(null)_1D_Viterbi(13,:)=[0.000000000000 0.000044727325];
+(null)_1D_Viterbi_M_ary(13,:)=[0.000000000000 0.000066375732];
+(null)_1D_Viterbi_demodul(13,:)=[0.000000000000 0.000019369835];
+(null)_1D_Viterbi_demodul_M_ary(13,:)=[0.000000000000 0.000027284391];
+(null)_channel(14)=0.013153839111;
+(null)_channel_M_ary(14)=0.019186210632;
+%data(x,y)
+(null)_1D_Viterbi(14,:)=[0.000000000000 0.000028705597];
+(null)_1D_Viterbi_M_ary(14,:)=[0.000000000000 0.000041961670];
+(null)_1D_Viterbi_demodul(14,:)=[0.000000000000 0.000000728972];
+(null)_1D_Viterbi_demodul_M_ary(14,:)=[0.000000000000 0.000001249667];
+(null)_channel(15)=0.011684417725;
+(null)_channel_M_ary(15)=0.016997909546;
+%data(x,y)
+(null)_1D_Viterbi(15,:)=[0.000000000000 0.000016307831];
+(null)_1D_Viterbi_M_ary(15,:)=[0.000000000000 0.000024795532];
+(null)_1D_Viterbi_demodul(15,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(15,:)=[0.000000000000 0.000000000000];
+(null)_channel(16)=0.010638237000;
+(null)_channel_M_ary(16)=0.015464019775;
+%data(x,y)
+(null)_1D_Viterbi(16,:)=[0.000000000000 0.000008106232];
+(null)_1D_Viterbi_M_ary(16,:)=[0.000000000000 0.000010871887];
+(null)_1D_Viterbi_demodul(16,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(16,:)=[0.000000000000 0.000000000000];
+(null)_channel(17)=0.009728050232;
+(null)_channel_M_ary(17)=0.014140892029;
+%data(x,y)
+(null)_1D_Viterbi(17,:)=[0.000000000000 0.000004386902];
+(null)_1D_Viterbi_M_ary(17,:)=[0.000000000000 0.000006103516];
+(null)_1D_Viterbi_demodul(17,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(17,:)=[0.000000000000 0.000000000000];
+(null)_channel(18)=0.009040355682;
+(null)_channel_M_ary(18)=0.013146209717;
+%data(x,y)
+(null)_1D_Viterbi(18,:)=[0.000000000000 0.000001621246];
+(null)_1D_Viterbi_M_ary(18,:)=[0.000000000000 0.000002670288];
+(null)_1D_Viterbi_demodul(18,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(18,:)=[0.000000000000 0.000000000000];
+(null)_channel(8)=0.036712551117;
+(null)_channel_M_ary(8)=0.053375053406;
+%data(x,y)
+(null)_1D_Viterbi(8,:)=[0.000000000000 0.011406707764];
+(null)_1D_Viterbi_M_ary(8,:)=[0.000000000000 0.016687774658];
+(null)_1D_Viterbi_demodul(8,:)=[0.000000000000 0.014987253399];
+(null)_1D_Viterbi_demodul_M_ary(8,:)=[0.000000000000 0.021238711344];
+(null)_channel(9)=0.030132675171;
+(null)_channel_M_ary(9)=0.043824768066;
+%data(x,y)
+(null)_1D_Viterbi(9,:)=[0.000000000000 0.004905605316];
+(null)_1D_Viterbi_M_ary(9,:)=[0.000000000000 0.007187843323];
+(null)_1D_Viterbi_demodul(9,:)=[0.000000000000 0.006405166955];
+(null)_1D_Viterbi_demodul_M_ary(9,:)=[0.000000000000 0.009092367035];
+(null)_channel(10)=0.025043678284;
+(null)_channel_M_ary(10)=0.036358833313;
+%data(x,y)
+(null)_1D_Viterbi(10,:)=[0.000000000000 0.001637744904];
+(null)_1D_Viterbi_M_ary(10,:)=[0.000000000000 0.002400970459];
+(null)_1D_Viterbi_demodul(10,:)=[0.000000000000 0.002067677786];
+(null)_1D_Viterbi_demodul_M_ary(10,:)=[0.000000000000 0.002933176153];
+(null)_channel(11)=0.021085071564;
+(null)_channel_M_ary(11)=0.030599021912;
+%data(x,y)
+(null)_1D_Viterbi(11,:)=[0.000000000000 0.000499439240];
+(null)_1D_Viterbi_M_ary(11,:)=[0.000000000000 0.000729942322];
+(null)_1D_Viterbi_demodul(11,:)=[0.000000000000 0.000562037623];
+(null)_1D_Viterbi_demodul_M_ary(11,:)=[0.000000000000 0.000801661224];
+(null)_channel(12)=0.018090629578;
+(null)_channel_M_ary(12)=0.026175880432;
+%data(x,y)
+(null)_1D_Viterbi(12,:)=[0.000000000000 0.000126743317];
+(null)_1D_Viterbi_M_ary(12,:)=[0.000000000000 0.000185775757];
+(null)_1D_Viterbi_demodul(12,:)=[0.000000000000 0.000106221674];
+(null)_1D_Viterbi_demodul_M_ary(12,:)=[0.000000000000 0.000149126899];
+(null)_channel(13)=0.015715408325;
+(null)_channel_M_ary(13)=0.022723197937;
+%data(x,y)
+(null)_1D_Viterbi(13,:)=[0.000000000000 0.000045108795];
+(null)_1D_Viterbi_M_ary(13,:)=[0.000000000000 0.000066375732];
+(null)_1D_Viterbi_demodul(13,:)=[0.000000000000 0.000019265696];
+(null)_1D_Viterbi_demodul_M_ary(13,:)=[0.000000000000 0.000027700946];
+(null)_channel(14)=0.013829612732;
+(null)_channel_M_ary(14)=0.020055198669;
+%data(x,y)
+(null)_1D_Viterbi(14,:)=[0.000000000000 0.000029373169];
+(null)_1D_Viterbi_M_ary(14,:)=[0.000000000000 0.000043296814];
+(null)_1D_Viterbi_demodul(14,:)=[0.000000000000 0.000000833111];
+(null)_1D_Viterbi_demodul_M_ary(14,:)=[0.000000000000 0.000001457945];
+(null)_channel(15)=0.012476062775;
+(null)_channel_M_ary(15)=0.018016815186;
+%data(x,y)
+(null)_1D_Viterbi(15,:)=[0.000000000000 0.000016021729];
+(null)_1D_Viterbi_M_ary(15,:)=[0.000000000000 0.000024604797];
+(null)_1D_Viterbi_demodul(15,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(15,:)=[0.000000000000 0.000000000000];
+(null)_channel(16)=0.011376285553;
+(null)_channel_M_ary(16)=0.016416931152;
+%data(x,y)
+(null)_1D_Viterbi(16,:)=[0.000000000000 0.000007724762];
+(null)_1D_Viterbi_M_ary(16,:)=[0.000000000000 0.000010490417];
+(null)_1D_Viterbi_demodul(16,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(16,:)=[0.000000000000 0.000000000000];
+(null)_channel(17)=0.010506248474;
+(null)_channel_M_ary(17)=0.015170288086;
+%data(x,y)
+(null)_1D_Viterbi(17,:)=[0.000000000000 0.000004482269];
+(null)_1D_Viterbi_M_ary(17,:)=[0.000000000000 0.000006294250];
+(null)_1D_Viterbi_demodul(17,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(17,:)=[0.000000000000 0.000000000000];
+(null)_channel(18)=0.009789752960;
+(null)_channel_M_ary(18)=0.014148521423;
+%data(x,y)
+(null)_1D_Viterbi(18,:)=[0.000000000000 0.000001621246];
+(null)_1D_Viterbi_M_ary(18,:)=[0.000000000000 0.000002670288];
+(null)_1D_Viterbi_demodul(18,:)=[0.000000000000 0.000000000000];
+(null)_1D_Viterbi_demodul_M_ary(18,:)=[0.000000000000 0.000000000000];

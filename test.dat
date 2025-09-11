@@ -66,3 +66,9 @@ viterbi error x : 0	BER : 0.000000000000
 viterbi M_ary error x : 0	BER : 0.000000000000
 modulation error x : 0	BER : 0.000000000000
 modulation M_ary error x : 0	BER : 0.000000000000
+
+snr_db : 18.0		Mis snr_db : 0.0
+viterbi error x : 0	BER : 0.000000000000
+viterbi M_ary error x : 0	BER : 0.000000000000
+modulation error x : 0	BER : 0.000000000000
+modulation M_ary error x : 0	BER : 0.000000000000

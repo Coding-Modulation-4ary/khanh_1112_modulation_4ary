@@ -14,7 +14,7 @@ const double DELTA = 0.000005;                   //// step size that controls th
 												 //// A larger value speeds up adaptation but lowers accuracy; a smaller value gives slower adaptation but higher accuracy.
 const int Training_Block = 3;                    //// number of blocks reserved for training
 const int M_ary = 4;                             //// total number of symbols (2-ary = 1 bit, 4-ary = 2 bits, 3-ary = 1.5 bits)
-const int BLOCK = 5;                           //// total number of blocks => 1000 block
+const int BLOCK = 1000;                           //// total number of blocks => 1000 block
 const int Page_Size = 1024;                      //// upper limit of block length, constant
 const int Data_Size = Page_Size;                 //// data length per page
 const double SigmaB = 1;                         //// standard deviation of block noise => blur noise
